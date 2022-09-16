@@ -1390,6 +1390,10 @@ body {
   padding: 0px;
   list-style: none;
   text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
 }
 @media (prefers-color-scheme: light) {
   a,
