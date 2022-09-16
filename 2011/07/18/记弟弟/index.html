@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Text</title>
     <!-- 导入css -->
-    <link rel="stylesheet" href="/project/style.css"/>
+    <link rel="stylesheet" href="/style.css"/>
     <link rel="stylesheet" href="/Summer/bg.css">
     <link rel="stylesheet" href="/Summer/Glass.css">
      <!-- 代码高亮  -->
@@ -21,32 +21,18 @@
   <body>
 
   <div id="page-container">
-    <header id="toggleMenu">
-	<nav>
-		<a href="/project/" class="logo">Text</a>
-		<ul class="navigation">
-			<li>    <a class="kong" href="/project/archives"> 分类 </a></li>
-			<li>    <a class="kong" href="/project/about"> 关于 </a></li>
-		</ul>
-		<div class="toggle"></div>
-    </nav>
-    	<!-- <div class="glass"></div> -->
-	<div class="Summer">
-		<h1>欢迎来到这个夏天<br><span>Welcome to clear ocean water, To clear ocean water.</span></h1>
-    </div>
-    <ul class="sci">
-		<li><a href=".">last page</a></li>
-		<li><a href=".">next page</a></li>
-	</ul>
-</header>
+    <span class="pai">
+    <a class="kong" href="/"> 主页 </a>
+    <a class="kong" href="/archives"> 分类 </a>
+    <a class="kong" href="/about"> 关于 </a>
+</span>
 
     <div id="content-wrap">
         <div class="container">
           <!-- 点击文章 -->
-<div class="wenzhang-container">
+<div>
+  <h1>记弟弟</h1>
   <wenzhang>
-    <span class="frosted_glass"><h1 class="title is-3 is-4-mobile">记弟弟</h1>
-
       <div class="contents">
         
       </div>
@@ -55,36 +41,34 @@
 <p>我想，弟弟的灵魂一定是洁白无瑕的，一定还残留着我手指上的余温。</p>
 <p>随着键盘的敲打，我的视线模糊了，眼泪也不争气的再次掉了下来，因为想对弟弟说的有太多太多，想对它做得有太多太多……</p>
 <p>弟弟，在天堂要照料好自己……</p>
- </span> 
+
       <div id="lv-container" data-id="city" data-uid="MTAyMC80NTk3NS8yMjQ4Ng==">
-  </wenzhang>
-</div>
-
-
-<body>
-  <!-- ... -->
-  <div id="waline"></div>
-  <script>
-    Waline.init({
-      el: '#waline',
-      serverURL: 'https://comments.sdq3.ml/',
-    });
-  </script>
+  <!-- 评论系统 -->
+  <script type="text/javascript">
+     (function(d, s) {
+         var j, e = d.getElementsByTagName(s)[0];
+         if (typeof LivereTower === 'function') { return; }
   
-
-<!-- 评论系统 -->
-
-<!-- <iframe src="/waline.html" frameborder="0" id="Text-iframe" ></iframe> -->
-
-</body>  
-<div>
-      <!-- 博客链接 -->
+         j = d.createElement(s);
+         j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+         j.async = true;
+  
+         e.parentNode.insertBefore(j, e);
+     })(document, 'script');
+  </script>
+  </div>
+      <!-- 博客版权 -->
       <p class="copyright"><strong>
         作者: 我叫史迪奇
         <br>
         本文来自于: 
-         <a href="https://august0823.github.io/project/2011/07/18/%E8%AE%B0%E5%BC%9F%E5%BC%9F/">https://august0823.github.io/project/2011/07/18/%E8%AE%B0%E5%BC%9F%E5%BC%9F/</a>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</strong></p>
-</div>   
+         <a href="https://august0823.github.io/2011/07/18/%E8%AE%B0%E5%BC%9F%E5%BC%9F/">https://august0823.github.io/2011/07/18/%E8%AE%B0%E5%BC%9F%E5%BC%9F/</a>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</strong></p>
+  </wenzhang>
+</div>
+
+
+
+
 
         </div>
     </div>
@@ -102,10 +86,10 @@
 </footer>
   </div>
   
-<script src="/project/jquery.min.js"></script>
+<script src="/jquery.min.js"></script>
 
   
-<script src="/project/main.js"></script>
+<script src="/main.js"></script>
 
   <script src="/Summer/bg.js"></script>
 <!-- <script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script> -->
